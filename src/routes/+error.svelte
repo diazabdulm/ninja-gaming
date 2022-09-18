@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import '../styles/global.css';
+	import '$lib/global.css';
 </script>
 
 <div class="error">

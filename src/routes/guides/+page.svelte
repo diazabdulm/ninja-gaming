@@ -1,13 +1,14 @@
 <script>
 	export let data;
-	const { guides } = data;
 </script>
 
 <div class="guides">
 	<ul>
-		{#each guides as guide (guide.id)}
+		{#each data.guides as guide}
 			<li>
-				<a data-sveltekit-prefetch href={`/guides/${guide.id}`}>{guide.title}</a>
+				<a data-sveltekit-prefetch href={`/guides/${guide.id}`}>
+					{guide.title}
+				</a>
 			</li>
 		{/each}
 	</ul>
